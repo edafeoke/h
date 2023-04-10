@@ -6,4 +6,4 @@ app.get('/',(req,res)=>{
 	res.send('hello world!')
 });
 
-app.listen(5000,()=>console.log('listening'));
+app.listen(process.env.PORT,()=>console.log(`listening ${process.env.PORT}`));
